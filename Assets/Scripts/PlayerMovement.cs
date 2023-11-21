@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //position of player
     Vector3 pos;
 
     // Update is called once per frame
@@ -28,11 +29,11 @@ public class PlayerMovement : MonoBehaviour
         //switch mouse position to player coordinate
         pos = Camera.main.ScreenToWorldPoint(pos);
         //its 2D so we dont care about the Z
-        pos.z = 1.0f;
+        pos.z = 0.0f;
 
         //lerp the player to the mouse
         //if we dont lerp the player will be bugged trying to rotate and move at the same time
-        transform.position = Vector3.Lerp(transform.position, pos, 0.1f);
+        transform.position = Vector3.Lerp(transform.position, pos, 0.05f);
     }
 
     
