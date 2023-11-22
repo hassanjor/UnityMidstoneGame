@@ -8,12 +8,21 @@ public class SnowSpawner : MonoBehaviour
     private float minX, maxX, minY, maxY;
     //position of spawn
     private Vector2 pos;
-    //the snow object we want to Instantiate 
+    //the snow objects we want to Instantiate 
     public GameObject Snow;
+    public GameObject redSnow;
+    public GameObject yellowSnow; 
+
     //timer to control the spawning
     float timer = 0;
+    float redTimer = 0; 
+    float yellowTimer = 0;
+
     //make sure we dont spawn forever
-    public int maxSpawnLimit = 30; //adjust this from the spawner game object in the scene
+    //adjust these values from the spawner game object in the scene for it to change 
+    public int maxSpawnLimit = 50; 
+    public int maxRedSpawnLimit = 10; 
+    public int maxYellowSpawnLimit = 5;
 
     void SetMinAndMax()
     {
@@ -27,7 +36,7 @@ public class SnowSpawner : MonoBehaviour
         maxY = Bounds.y;
     }
 
-    void SpawnObject()
+    void SpawnRegularSnow()
     {
         //spawn the object by instansiating from the snow gameobject(prefab in project browser),
         //and at a random location in our camera borders 
@@ -36,6 +45,21 @@ public class SnowSpawner : MonoBehaviour
         GameObject obj = Instantiate(Snow, pos, Quaternion.identity);
         obj.transform.parent = transform;
     }
+
+    void SpawnRedSnow()
+    {
+        pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        GameObject obj = Instantiate(redSnow, pos, Quaternion.identity);
+        obj.transform.parent = transform;
+    }
+
+    void SpawnYellowSnow()
+    {
+        pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        GameObject obj = Instantiate(yellowSnow, pos, Quaternion.identity);
+        obj.transform.parent = transform;
+    }
+
 
     void Start()
     {
@@ -47,14 +71,34 @@ public class SnowSpawner : MonoBehaviour
     {
         //increase the timer every second
         timer += Time.deltaTime;
+        redTimer += Time.deltaTime;
+        yellowTimer += Time.deltaTime;
+
         //every 1 second spawn a snow pile and reset the timer 
         if (timer >= 1 && maxSpawnLimit > 0)
         {
-            SpawnObject();
+            SpawnRegularSnow();
             //decrease 1 every time a snow pile is spawned
             //this also gets increased whenever a snow pile is destroyed (in snow collisions script)
             maxSpawnLimit--;
-            timer = 0;           
+            timer = 0.0f;           
+        }
+
+        //spawn Red snow every 5 seconds 
+        if(redTimer >= 5.0f && maxRedSpawnLimit > 0) 
+        {
+            SpawnRedSnow();
+            maxRedSpawnLimit--;
+            redTimer = 0.0f;
+            
+        }
+
+        //spawn yellow snow every 10 seconds 
+        if(yellowTimer >= 10.0f && maxYellowSpawnLimit > 0)
+        {
+            SpawnYellowSnow();
+            maxYellowSpawnLimit--;
+            yellowTimer = 0.0f;
         }
 
     }
