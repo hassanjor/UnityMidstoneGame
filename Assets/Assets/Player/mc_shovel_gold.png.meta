@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mc_shovel_gold_0: -7553966266626556585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

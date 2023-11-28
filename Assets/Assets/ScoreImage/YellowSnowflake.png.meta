@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowSnowflake_0: 4913890804549925705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

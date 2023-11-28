@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedSnowflake_0: 2886554185945358186
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
