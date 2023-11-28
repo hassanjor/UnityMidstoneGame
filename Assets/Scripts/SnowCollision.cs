@@ -41,10 +41,31 @@ public class SnowCollision : MonoBehaviour
                 //increase the limit of max spawned so more can be spawned
                 snowSpawner.maxSpawnLimit++;
 
-                //TODO: Score would probably be increased here 
-                score += 50;
-                scoreText.text = score.ToString();
+                //Score for regular shovel 
+                if (BuyItems.regShovelBought == true)
+                {
+                    score += 150;
+                    scoreText.text = score.ToString();
+                }
+
+                //Score for gold shovel 
+                if(BuyItems.goldShovelBought == true)
+                {
+                    score += 225;
+                    scoreText.text = score.ToString();
+                }
+
+                //score for no shovel 
+                else if (BuyItems.regShovelBought == false && BuyItems.goldShovelBought == false)
+                {
+                    score += 50;
+                    scoreText.text = score.ToString();
+                }
+
+
             }
+
+            
         }
 
         //check if the tag is red snow 
@@ -58,9 +79,25 @@ public class SnowCollision : MonoBehaviour
                 //increase the limit of max spawned so more can be spawned
                 snowSpawner.maxRedSpawnLimit++;
 
-                //TODO: Red snow score would probably be increased here 
-               redScore += 15;
-               redScoreText.text = redScore.ToString();
+                //Score for regular shovel 
+                if (BuyItems.regShovelBought == true)
+                {
+                    redScore += 50;
+                    redScoreText.text = redScore.ToString();
+
+                }
+                //Score for gold shovel 
+                if (BuyItems.goldShovelBought == true)
+                {
+                    redScore += 100;
+                    redScoreText.text = redScore.ToString();
+                }
+                //Score for no shovel 
+                else if (BuyItems.regShovelBought == false && BuyItems.goldShovelBought == false)
+                {
+                    redScore += 15;
+                    redScoreText.text = redScore.ToString();
+                }
             }
         }
 
@@ -75,14 +112,31 @@ public class SnowCollision : MonoBehaviour
                 //increase the limit of max spawned so more can be spawned
                 snowSpawner.maxYellowSpawnLimit++;
 
-                //TODO: Yellow snow score would probably be increased here 
-               yellowScore += 5;
-               yellowScoreText.text = yellowScore.ToString();
+                //Score for regular shovel 
+                if (BuyItems.regShovelBought == true)
+                {
+                    yellowScore += 10;
+                    yellowScoreText.text = yellowScore.ToString();
+                }
 
+                //Score for gold shovel 
+                if (BuyItems.goldShovelBought == true)
+                {
+                    yellowScore += 20;
+                    yellowScoreText.text = yellowScore.ToString();
+                }
+
+                //Score for no shovel 
+                else if (BuyItems.regShovelBought == false && BuyItems.goldShovelBought == false)
+                {
+                    yellowScore += 5;
+                    yellowScoreText.text = yellowScore.ToString();
+                }
             }
         }
 
     }
+
 
     void Update()
     {

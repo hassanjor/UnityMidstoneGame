@@ -7,6 +7,11 @@ public class PlayerMovement : MonoBehaviour
     //position of player
     Vector3 pos;
 
+    //reference to the player sprites and renderes 
+    public SpriteRenderer spriteRenderer;
+    public Sprite regShovelSprite;
+    public Sprite goldShovelSprite; 
+
     // Update is called once per frame
     void Update()
     {
@@ -34,6 +39,20 @@ public class PlayerMovement : MonoBehaviour
         //lerp the player to the mouse
         //if we dont lerp the player will be bugged trying to rotate and move at the same time
         transform.position = Vector3.Lerp(transform.position, pos, 0.05f);
+
+
+        //change the player sprite depending on what shove the player has bought 
+        if(BuyItems.regShovelBought == true)
+        {
+            spriteRenderer.sprite = regShovelSprite;
+            gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0.0f);
+        }
+
+        if (BuyItems.goldShovelBought == true)
+        {
+            spriteRenderer.sprite = goldShovelSprite;
+            gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0.0f);
+        }
     }
 
     
