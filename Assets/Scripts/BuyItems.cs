@@ -14,13 +14,13 @@ public class BuyItems : MonoBehaviour
 
     //this is made as a one time check to see if the shovel was ever bought in the first place, 
     //used to remove the "BUY" button and to dictate what shovel should have the "Equip" button 
-
     public static bool regBought;
     public static bool goldBought;
-    public static bool redBought;
-    public static bool yellowBought;
- 
 
+    public static bool redSnowBought;
+    public static bool yellowSnowBought;
+ 
+    
     //the buy buttons 
     public Button regShovelBuyBtn;
     public Button goldShovelBuyBtn;
@@ -89,13 +89,13 @@ public class BuyItems : MonoBehaviour
     {
         //if the player presses the buy button for red snow
         //and has enough score then buy red snow
-        if (SnowCollision.score >= 3000)
+        if (SnowCollision.score >= 500)
         {
             //red snow bought
-            redBought = true;
+            redSnowBought = true;
 
             //take away the price from the player 
-            SnowCollision.score -= 3000;
+            SnowCollision.score -= 500;
         }
     }
 
@@ -103,13 +103,13 @@ public class BuyItems : MonoBehaviour
     {
         //if the player presses the buy button for yellow snow
         //and has enough score then buy yellow snow
-        if (SnowCollision.redScore >= 2000)
+        if (SnowCollision.redScore >= 250)
         {
             //yellow snow bought 
-            yellowBought = true;
+            yellowSnowBought = true;
 
             //take away the price from the player 
-            SnowCollision.redScore -= 2000;
+            SnowCollision.redScore -= 250;
         }
     }
 
@@ -151,7 +151,7 @@ public class BuyItems : MonoBehaviour
 
         if (redSnowBuyBtn!= null)
         {
-            if (redBought == true)
+            if (redSnowBought == true)
             {
                 redSnowBuyBtn.gameObject.SetActive(false);
                 redSnowBuyBtn = null;
@@ -160,7 +160,7 @@ public class BuyItems : MonoBehaviour
         }
         if (yellowSnowBuyBtn != null)
         {
-            if (yellowBought == true)
+            if (yellowSnowBought == true)
             {
                 yellowSnowBuyBtn.gameObject.SetActive(false);
                 yellowSnowBuyBtn = null;

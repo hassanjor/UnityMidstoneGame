@@ -85,7 +85,7 @@ public class SnowSpawner : MonoBehaviour
         }
 
         //spawn Red snow every 5 seconds 
-        if(redTimer >= 5.0f && maxRedSpawnLimit > 0) 
+        if(redTimer >= 5.0f && maxRedSpawnLimit > 0 && BuyItems.redSnowBought == true) 
         {
             SpawnRedSnow();
             maxRedSpawnLimit--;
@@ -94,7 +94,7 @@ public class SnowSpawner : MonoBehaviour
         }
 
         //spawn yellow snow every 10 seconds 
-        if(yellowTimer >= 10.0f && maxYellowSpawnLimit > 0)
+        if(yellowTimer >= 10.0f && maxYellowSpawnLimit > 0 && BuyItems.yellowSnowBought == true)
         {
             SpawnYellowSnow();
             maxYellowSpawnLimit--;
