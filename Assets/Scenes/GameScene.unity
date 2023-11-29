@@ -1220,7 +1220,6 @@ GameObject:
   - component: {fileID: 1536420928}
   - component: {fileID: 1536420930}
   - component: {fileID: 1536420929}
-  - component: {fileID: 1536420931}
   m_Layer: 0
   m_Name: mc2
   m_TagString: Untagged
@@ -1307,9 +1306,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2019a61630b75e342807f673b0b43f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
-  regShovelSprite: {fileID: 0}
-  goldShovelSprite: {fileID: 0}
+  spriteRenderer: {fileID: 1536420925}
+  regShovelSprite: {fileID: -8162747541304599857, guid: b91d9439c92ba0847be187ba50e1f29d, type: 3}
+  goldShovelSprite: {fileID: -7553966266626556585, guid: 29b0ed9763d68744b91d30a283a465d4, type: 3}
 --- !u!61 &1536420928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1399,20 +1398,6 @@ MonoBehaviour:
   scoreText: {fileID: 1329522933}
   redScoreText: {fileID: 1425777980}
   yellowScoreText: {fileID: 543984124}
---- !u!114 &1536420931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536420924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e67568bab6843404d83ee92fd37ca82d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  regShovelBuyBtn: {fileID: 0}
-  goldShovelBuyBtn: {fileID: 0}
 --- !u!1 &1740745687
 GameObject:
   m_ObjectHideFlags: 0

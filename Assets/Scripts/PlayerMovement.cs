@@ -41,18 +41,20 @@ public class PlayerMovement : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, pos, 0.05f);
 
 
-        //change the player sprite depending on what shove the player has bought 
-        if(BuyItems.regShovelBought == true)
-        {
-            spriteRenderer.sprite = regShovelSprite;
-            gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0.0f);
-        }
-
-        if (BuyItems.goldShovelBought == true)
-        {
-            spriteRenderer.sprite = goldShovelSprite;
-            gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0.0f);
-        }
+        //change the player sprite depending on what shove the player has active at the moment 
+    
+            if (BuyItems.regShovelActive == true)
+            {
+                spriteRenderer.sprite = regShovelSprite;
+                gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0.0f);
+            }
+    
+            if (BuyItems.goldShovelActive == true)
+            {
+                spriteRenderer.sprite = goldShovelSprite;
+                gameObject.transform.localScale = new Vector3(0.3f, 0.3f, 0.0f);
+            }
+       
     }
 
     

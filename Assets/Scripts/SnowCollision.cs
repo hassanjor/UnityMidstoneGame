@@ -42,21 +42,21 @@ public class SnowCollision : MonoBehaviour
                 snowSpawner.maxSpawnLimit++;
 
                 //Score for regular shovel 
-                if (BuyItems.regShovelBought == true)
+                if (BuyItems.regShovelActive == true)
                 {
                     score += 150;
                     scoreText.text = score.ToString();
                 }
 
                 //Score for gold shovel 
-                if(BuyItems.goldShovelBought == true)
+                if(BuyItems.goldShovelActive == true)
                 {
                     score += 225;
                     scoreText.text = score.ToString();
                 }
 
                 //score for no shovel 
-                else if (BuyItems.regShovelBought == false && BuyItems.goldShovelBought == false)
+                else if (BuyItems.regShovelActive == false && BuyItems.goldShovelActive == false)
                 {
                     score += 50;
                     scoreText.text = score.ToString();
@@ -80,20 +80,20 @@ public class SnowCollision : MonoBehaviour
                 snowSpawner.maxRedSpawnLimit++;
 
                 //Score for regular shovel 
-                if (BuyItems.regShovelBought == true)
+                if (BuyItems.regShovelActive == true)
                 {
                     redScore += 50;
                     redScoreText.text = redScore.ToString();
 
                 }
                 //Score for gold shovel 
-                if (BuyItems.goldShovelBought == true)
+                if (BuyItems.goldShovelActive == true)
                 {
                     redScore += 100;
                     redScoreText.text = redScore.ToString();
                 }
                 //Score for no shovel 
-                else if (BuyItems.regShovelBought == false && BuyItems.goldShovelBought == false)
+                else if (BuyItems.regShovelActive == false && BuyItems.goldShovelActive == false)
                 {
                     redScore += 15;
                     redScoreText.text = redScore.ToString();
@@ -113,21 +113,21 @@ public class SnowCollision : MonoBehaviour
                 snowSpawner.maxYellowSpawnLimit++;
 
                 //Score for regular shovel 
-                if (BuyItems.regShovelBought == true)
+                if (BuyItems.regShovelActive == true)
                 {
                     yellowScore += 10;
                     yellowScoreText.text = yellowScore.ToString();
                 }
 
                 //Score for gold shovel 
-                if (BuyItems.goldShovelBought == true)
+                if (BuyItems.goldShovelActive == true)
                 {
                     yellowScore += 20;
                     yellowScoreText.text = yellowScore.ToString();
                 }
 
                 //Score for no shovel 
-                else if (BuyItems.regShovelBought == false && BuyItems.goldShovelBought == false)
+                else if (BuyItems.regShovelActive == false && BuyItems.goldShovelActive == false)
                 {
                     yellowScore += 5;
                     yellowScoreText.text = yellowScore.ToString();
