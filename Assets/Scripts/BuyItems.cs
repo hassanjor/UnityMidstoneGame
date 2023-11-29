@@ -17,11 +17,15 @@ public class BuyItems : MonoBehaviour
 
     public static bool regBought;
     public static bool goldBought;
+    public static bool redBought;
+    public static bool yellowBought;
  
 
     //the buy buttons 
     public Button regShovelBuyBtn;
-    public Button goldShovelBuyBtn; 
+    public Button goldShovelBuyBtn;
+    public Button redSnowBuyBtn;
+    public Button yellowSnowBuyBtn;
 
 
     //Equip Buttons
@@ -81,6 +85,34 @@ public class BuyItems : MonoBehaviour
         }
     }
 
+    public void RedSnowClicked()
+    {
+        //if the player presses the buy button for red snow
+        //and has enough score then buy red snow
+        if (SnowCollision.score >= 3000)
+        {
+            //red snow bought
+            redBought = true;
+
+            //take away the price from the player 
+            SnowCollision.score -= 3000;
+        }
+    }
+
+    public void YellowSnowClicked()
+    {
+        //if the player presses the buy button for yellow snow
+        //and has enough score then buy yellow snow
+        if (SnowCollision.redScore >= 2000)
+        {
+            //yellow snow bought 
+            yellowBought = true;
+
+            //take away the price from the player 
+            SnowCollision.redScore -= 2000;
+        }
+    }
+
     //equipping the shovel with no cost, will get called on the equip button which only appears whne the shovel is bought anyways
     public void EquipRegularShovel()
     {
@@ -114,6 +146,24 @@ public class BuyItems : MonoBehaviour
             {
                 goldShovelBuyBtn.gameObject.SetActive(false);
                 goldShovelBuyBtn = null;
+            }
+        }
+
+        if (redSnowBuyBtn!= null)
+        {
+            if (redBought == true)
+            {
+                redSnowBuyBtn.gameObject.SetActive(false);
+                redSnowBuyBtn = null;
+
+            }
+        }
+        if (yellowSnowBuyBtn != null)
+        {
+            if (yellowBought == true)
+            {
+                yellowSnowBuyBtn.gameObject.SetActive(false);
+                yellowSnowBuyBtn = null;
             }
         }
 

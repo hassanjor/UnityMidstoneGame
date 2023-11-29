@@ -48,9 +48,9 @@ public class SnowSpawner : MonoBehaviour
 
     void SpawnRedSnow()
     {
-        pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-        GameObject obj = Instantiate(redSnow, pos, Quaternion.identity);
-        obj.transform.parent = transform;
+            pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+            GameObject obj = Instantiate(redSnow, pos, Quaternion.identity);
+            obj.transform.parent = transform;
     }
 
     void SpawnYellowSnow()
