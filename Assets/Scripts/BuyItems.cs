@@ -103,13 +103,13 @@ public class BuyItems : MonoBehaviour
     {
         //if the player presses the buy button for yellow snow
         //and has enough score then buy yellow snow
-        if (SnowCollision.redScore >= 250)
+        if (SnowCollision.redScore >= 100)
         {
             //yellow snow bought 
             yellowSnowBought = true;
 
             //take away the price from the player 
-            SnowCollision.redScore -= 250;
+            SnowCollision.redScore -= 100;
         }
     }
 
