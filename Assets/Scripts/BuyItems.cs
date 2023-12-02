@@ -19,13 +19,22 @@ public class BuyItems : MonoBehaviour
 
     public static bool redSnowBought;
     public static bool yellowSnowBought;
- 
-    
+
+    //counter for bought potions 
+    public static int blueElixirCounter;
+    public static int redElixirCounter;
+
+    //text for the counter
+    public Text blueElixirText;
+    public Text redElixirText; 
+
     //the buy buttons 
     public Button regShovelBuyBtn;
     public Button goldShovelBuyBtn;
     public Button redSnowBuyBtn;
     public Button yellowSnowBuyBtn;
+    public Button blueElixirBuyBtn;
+    public Button redElixirBuyBtn;
 
 
     //Equip Buttons
@@ -126,10 +135,31 @@ public class BuyItems : MonoBehaviour
         regShovelActive = false;
     }
 
+    public void BlueElixirClicked()
+    {
+        if(SnowCollision.yellowScore >= 10)
+        {
+            blueElixirCounter++;
+            SnowCollision.yellowScore -= 10;
+        }
+    }
 
+    public void RedElixirClicked()
+    {
+        if(SnowCollision.yellowScore >= 20)
+        {
+            redElixirCounter++;
+            SnowCollision.yellowScore -= 20; 
+        }
+    }
 
     void Update()
     {
+        //so it saves when switching scenes 
+        blueElixirText.text = "x" + blueElixirCounter.ToString();
+        redElixirText.text = "x" + redElixirCounter.ToString();
+
+
         //Hide the buttons whenever they are done with 
         if (regShovelBuyBtn != null)
         {

@@ -11,7 +11,12 @@ public class SnowSpawner : MonoBehaviour
     //the snow objects we want to Instantiate 
     public GameObject Snow;
     public GameObject redSnow;
-    public GameObject yellowSnow; 
+    public GameObject yellowSnow;
+
+    //list to add all our snow to and remove from 
+    //If this is not hidden in inspector sometimes it makes unity complain about null errors
+    [HideInInspector]
+    public List<GameObject> objList = new List<GameObject>();
 
     //timer to control the spawning
     float timer = 0;
@@ -44,13 +49,16 @@ public class SnowSpawner : MonoBehaviour
         pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         GameObject obj = Instantiate(Snow, pos, Quaternion.identity);
         obj.transform.parent = transform;
+        objList.Add(obj);
     }
 
     void SpawnRedSnow()
     {
-            pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-            GameObject obj = Instantiate(redSnow, pos, Quaternion.identity);
-            obj.transform.parent = transform;
+        pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        GameObject obj = Instantiate(redSnow, pos, Quaternion.identity);
+        obj.transform.parent = transform;
+        objList.Add(obj);
+
     }
 
     void SpawnYellowSnow()
@@ -58,6 +66,7 @@ public class SnowSpawner : MonoBehaviour
         pos = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
         GameObject obj = Instantiate(yellowSnow, pos, Quaternion.identity);
         obj.transform.parent = transform;
+        objList.Add(obj);
     }
 
 
