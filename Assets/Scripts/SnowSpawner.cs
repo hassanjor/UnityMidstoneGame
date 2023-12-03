@@ -84,7 +84,7 @@ public class SnowSpawner : MonoBehaviour
         yellowTimer += Time.deltaTime;
 
         //every 1 second spawn a snow pile and reset the timer 
-        if (timer >= 1 && maxSpawnLimit > 0)
+        if (timer >= 1 && maxSpawnLimit > 0 || Elixirs.redElixirActive && timer >= 0.1)
         {
             SpawnRegularSnow();
             //decrease 1 every time a snow pile is spawned
@@ -94,7 +94,7 @@ public class SnowSpawner : MonoBehaviour
         }
 
         //spawn Red snow every 5 seconds 
-        if(redTimer >= 5.0f && maxRedSpawnLimit > 0 && BuyItems.redSnowBought == true) 
+        if(redTimer >= 5.0f && maxRedSpawnLimit > 0 && BuyItems.redSnowBought == true || BuyItems.redSnowBought == true && Elixirs.redElixirActive && redTimer >= 0.3) 
         {
             SpawnRedSnow();
             maxRedSpawnLimit--;
@@ -103,7 +103,7 @@ public class SnowSpawner : MonoBehaviour
         }
 
         //spawn yellow snow every 10 seconds 
-        if(yellowTimer >= 10.0f && maxYellowSpawnLimit > 0 && BuyItems.yellowSnowBought == true)
+        if(yellowTimer >= 10.0f && maxYellowSpawnLimit > 0 && BuyItems.yellowSnowBought == true || BuyItems.yellowSnowBought == true && Elixirs.redElixirActive && yellowTimer >= 0.6)
         {
             SpawnYellowSnow();
             maxYellowSpawnLimit--;

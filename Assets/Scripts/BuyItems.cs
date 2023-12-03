@@ -137,7 +137,7 @@ public class BuyItems : MonoBehaviour
 
     public void BlueElixirClicked()
     {
-        if(SnowCollision.yellowScore >= 10)
+        if(SnowCollision.yellowScore >= 10 || SnowCollision.score >= 10 )
         {
             blueElixirCounter++;
             SnowCollision.yellowScore -= 10;
@@ -146,7 +146,7 @@ public class BuyItems : MonoBehaviour
 
     public void RedElixirClicked()
     {
-        if(SnowCollision.yellowScore >= 20)
+        if(SnowCollision.yellowScore >= 20 | SnowCollision.score >= 20)
         {
             redElixirCounter++;
             SnowCollision.yellowScore -= 20; 
