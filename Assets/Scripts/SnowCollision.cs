@@ -24,7 +24,8 @@ public class SnowCollision : MonoBehaviour
 
     //all potion counter texts
     public Text bluecounter;
-    public Text redCounter; 
+    public Text redCounter;
+
 
     void Start()
     {
@@ -336,11 +337,12 @@ public class SnowCollision : MonoBehaviour
     void Update()
     {
         
+        //changing the image of both images when they are on delay, 
         if (Elixirs.blueElixirActive)
         {
-            BlueElixirNuke(); 
+            BlueElixirNuke();
         }
-
+ 
         bluecounter.text = "x" + BuyItems.blueElixirCounter.ToString();
         redCounter.text  = "x" + BuyItems.redElixirCounter.ToString();
         //this is so when we switch scenes the text also stays the same 

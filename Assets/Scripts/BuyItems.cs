@@ -112,13 +112,13 @@ public class BuyItems : MonoBehaviour
     {
         //if the player presses the buy button for yellow snow
         //and has enough score then buy yellow snow
-        if (SnowCollision.redScore >= 100)
+        if (SnowCollision.redScore >= 300)
         {
             //yellow snow bought 
             yellowSnowBought = true;
 
             //take away the price from the player 
-            SnowCollision.redScore -= 100;
+            SnowCollision.redScore -= 300;
         }
     }
 
@@ -137,19 +137,19 @@ public class BuyItems : MonoBehaviour
 
     public void BlueElixirClicked()
     {
-        if(SnowCollision.yellowScore >= 10 || SnowCollision.score >= 10 )
+        if(SnowCollision.yellowScore >= 100)
         {
             blueElixirCounter++;
-            SnowCollision.yellowScore -= 10;
+            SnowCollision.yellowScore -= 100;
         }
     }
 
     public void RedElixirClicked()
     {
-        if(SnowCollision.yellowScore >= 20 | SnowCollision.score >= 20)
+        if(SnowCollision.yellowScore >= 200)
         {
             redElixirCounter++;
-            SnowCollision.yellowScore -= 20; 
+            SnowCollision.yellowScore -= 200; 
         }
     }
 

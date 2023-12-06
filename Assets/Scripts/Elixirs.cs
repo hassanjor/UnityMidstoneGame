@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Elixirs : MonoBehaviour
 {
@@ -13,9 +15,16 @@ public class Elixirs : MonoBehaviour
     static float blueDelayTimer;
     static float redDelayTimer;
 
+    //images for UI 
+    public Image blueElixir;
+    public Image darkBlueElixir;
+    public Image redElixir;
+    public Image darkRedElixir; 
 
-    // Update is called once per frame
-    void Update()
+
+
+// Update is called once per frame
+void Update()
     {
         //start both timers 
         blueDelayTimer += Time.deltaTime;
@@ -73,5 +82,41 @@ public class Elixirs : MonoBehaviour
         Debug.Log("elixer is active" + redElixirActive);
         Debug.Log(redDelayTimer);
 
+
+
+        //changing the image of both images when they are on delay, 
+        //these are to tell the player when they can use a potion and when they are on delay/dont have any
+        if (blueElixirActive)
+        {
+            blueElixir.gameObject.SetActive(false);
+            darkBlueElixir.gameObject.SetActive(true);
+        }
+        if (blueDelayOver && BuyItems.blueElixirCounter >= 1)
+        {
+            blueElixir.gameObject.SetActive(true);
+            darkBlueElixir.gameObject.SetActive(false);
+        }
+        else
+        {
+            blueElixir.gameObject.SetActive(false);
+            darkBlueElixir.gameObject.SetActive(true);
+
+        }
+        if (redElixirActive)
+        {
+            redElixir.gameObject.SetActive(false);
+            darkRedElixir.gameObject.SetActive(true);
+        }
+        if (redDelayOver && BuyItems.redElixirCounter >= 1)
+        {
+            redElixir.gameObject.SetActive(true);
+            darkRedElixir.gameObject.SetActive(false);
+        }
+        else
+        {
+            redElixir.gameObject.SetActive(false);
+            darkRedElixir.gameObject.SetActive(true);
+
+        }
     }
 }
