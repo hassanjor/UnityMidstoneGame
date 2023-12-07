@@ -7,6 +7,9 @@ TagManager:
   - Snow
   - RedSnow
   - YellowSnow
+  - Lazer
+  - Spike
+  - Boss
   layers:
   - Default
   - TransparentFX

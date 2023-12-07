@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BuyItems : MonoBehaviour
 {
@@ -45,13 +45,6 @@ public class BuyItems : MonoBehaviour
     //Equipped Buttons
     public Button regShovelEquippedBtn;
     public Button goldShovelEquippedBtn;
-
-
-
-    void Start()
-    {
-      
-    }
 
 
     public void RegularShovelClicked()
@@ -150,6 +143,15 @@ public class BuyItems : MonoBehaviour
         {
             redElixirCounter++;
             SnowCollision.yellowScore -= 200; 
+        }
+    }
+
+    //if player buys the boss button go to bossfight 
+    public void BossFightTime()
+    {
+        if(SnowCollision.score >= 120000 && SnowCollision.redScore >= 10000)
+        {
+            SceneManager.LoadScene("BossFight"); 
         }
     }
 
