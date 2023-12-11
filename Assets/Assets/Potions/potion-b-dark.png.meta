@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      potion-b-dark_0: 8762974720549261130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

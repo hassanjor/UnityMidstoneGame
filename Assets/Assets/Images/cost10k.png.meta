@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 4965f540bd363bc4091902513c440a73
+guid: 239b6615fa55f694a84e50c828cd6b8d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6063518002813205966
-    second: potion-r_0
+      213: -4396981788924027998
+    second: cost10k_0
+  - first:
+      213: 2827359319094115113
+    second: cost10k_1
+  - first:
+      213: -7550484700183722405
+    second: cost10k_2
+  - first:
+      213: -511533479093270989
+    second: cost10k_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -122,22 +131,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: potion-r_0
+      name: cost10k_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 25
-        width: 56
-        height: 56
+        x: 2
+        y: 4
+        width: 123
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2320229908e0adba0800000000000000
-      internalID: -6063518002813205966
+      spriteID: 2ab5253fb58caf2c0800000000000000
+      internalID: -4396981788924027998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cost10k_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 16
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bbefa125ccc3720800000000000000
+      internalID: 2827359319094115113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cost10k_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 16
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56078b5b2a473790800000000000000
+      internalID: -7550484700183722405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cost10k_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 16
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3360defc20ba6e8f0800000000000000
+      internalID: -511533479093270989
       vertices: []
       indices: 
       edges: []
@@ -145,7 +217,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e0d604f11836b6f4bb718e8388c274b9
     internalID: 0
     vertices: []
     indices: 
@@ -153,7 +225,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      potion-r_0: -6063518002813205966
+      cost10k_0: -4396981788924027998
+      cost10k_1: 2827359319094115113
+      cost10k_2: -7550484700183722405
+      cost10k_3: -511533479093270989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
