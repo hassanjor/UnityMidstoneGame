@@ -11,5 +11,14 @@ public class ShopButton : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void Quit()
+    {
+        //Quits actual build version of the game
+        Application.Quit();
 
+        //Quits the unity editor 
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
+
+ 
 }

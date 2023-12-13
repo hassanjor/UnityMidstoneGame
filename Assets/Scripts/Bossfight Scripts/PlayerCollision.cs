@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
@@ -13,7 +15,8 @@ public class PlayerCollision : MonoBehaviour
         if (col.gameObject.CompareTag("Lazer") || (col.gameObject.CompareTag("Spike")))
         {
             Destroy(player);
-            //TODO: this is where you will switch the scene to a you lost
+            //this is where you will switch the scene to a you lost
+            SceneManager.LoadScene("LoseGame");
         }
 
 
@@ -23,8 +26,8 @@ public class PlayerCollision : MonoBehaviour
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 Destroy(boss);
-                //TODO: this is where you will switch the scene to a you win
-
+                //this is where you will switch the scene to a you win
+                SceneManager.LoadScene("WinGame");
 
             }
         }

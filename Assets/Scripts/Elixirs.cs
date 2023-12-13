@@ -79,9 +79,6 @@ void Update()
             redElixirActive = false;
         }
 
-        Debug.Log("elixer is active" + redElixirActive);
-        Debug.Log(redDelayTimer);
-
 
 
         //changing the image of both images when they are on delay, 

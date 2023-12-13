@@ -35,7 +35,7 @@ public class BuyItems : MonoBehaviour
     public Button yellowSnowBuyBtn;
     public Button blueElixirBuyBtn;
     public Button redElixirBuyBtn;
-
+    public Button winBtn; 
 
     //Equip Buttons
     public Button regShovelEquipButton;

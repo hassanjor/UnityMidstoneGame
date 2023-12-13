@@ -980,6 +980,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -1075,12 +1076,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blueElixirText: {fileID: 668974545}
   redElixirText: {fileID: 1316123773}
-  regShovelBuyBtn: {fileID: 556410347}
+  regShovelBuyBtn: {fileID: 722188860}
   goldShovelBuyBtn: {fileID: 641979727}
   redSnowBuyBtn: {fileID: 1108275179}
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -1238,6 +1240,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -1438,6 +1441,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -1710,6 +1714,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -2146,6 +2151,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -2406,6 +2412,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -2685,6 +2692,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -2791,6 +2799,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -3116,6 +3125,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -3301,6 +3311,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -3408,6 +3419,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}
@@ -3705,6 +3717,7 @@ MonoBehaviour:
   yellowSnowBuyBtn: {fileID: 1907192432}
   blueElixirBuyBtn: {fileID: 1831431579}
   redElixirBuyBtn: {fileID: 1288346542}
+  winBtn: {fileID: 556410347}
   regShovelEquipButton: {fileID: 1242733205}
   goldShovelEquipButton: {fileID: 2125279146}
   regShovelEquippedBtn: {fileID: 1895553986}

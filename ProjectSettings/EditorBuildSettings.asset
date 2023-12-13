@@ -17,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFight.unity
     guid: b64bbc2bfd4d85843b8a226353074a4a
+  - enabled: 1
+    path: Assets/Scenes/LoseGame.unity
+    guid: b26267bd73dd832418ccde6a2ae372e6
+  - enabled: 1
+    path: Assets/Scenes/WInGame.unity
+    guid: 17e5d519e3fad6f47a36e2daa42888e5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
